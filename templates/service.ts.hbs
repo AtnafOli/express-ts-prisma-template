@@ -1,0 +1,24 @@
+import { db } from '../../../utils/db.server';
+import { Create{{pascalCase name}}, Update{{pascalCase name}} } from '../types/{{pascalCase name}}Types';
+
+export class {{pascalCase name}}Service {
+  async create(data: Create{{pascalCase name}}) {
+    return db.{{camelCase name}}.create({ data });
+  }
+
+  async findAll() {
+    return db.{{camelCase name}}.findMany();
+  }
+
+  async findOne(id: number) {
+    return db.{{camelCase name}}.findUnique({ where: { id } });
+  }
+
+  async update(id: number, data: Update{{pascalCase name}}) {
+    return db.{{camelCase name}}.update({ where: { id }, data });
+  }
+
+  async delete(id: number) {
+    return db.{{camelCase name}}.delete({ where: { id } });
+  }
+}

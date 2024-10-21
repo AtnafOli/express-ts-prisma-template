@@ -1,0 +1,19 @@
+import { Router } from 'express';
+import { create{{pascalCase name}}, update{{pascalCase name}}, delete{{pascalCase name}}, getResult{{pascalCase name}}s } from '../controllers';
+import advancedQuery from '../../../middlewares/advancedQuery';
+
+const router = Router();
+
+// Create a new {{pascalCase name}}
+router.post('/', create{{pascalCase name}});
+
+// Get all {{pascalCase name}}s with advanced query
+router.get('/', advancedQuery('{{camelCase name}}'), getResult{{pascalCase name}}s);
+
+// Update a {{pascalCase name}} by ID
+router.put('/:id', update{{pascalCase name}});
+
+// Delete a {{pascalCase name}} by ID
+router.delete('/:id', delete{{pascalCase name}});
+
+export default router;

@@ -1,0 +1,11 @@
+import { Request, Response } from 'express';
+import asyncHandler from 'express-async-handler';
+import { {{pascalCase name}}Service } from '../services/{{pascalCase name}}Service';
+
+const {{camelCase name}}ServiceInstance = new {{pascalCase name}}Service();
+
+export const delete{{pascalCase name}} = asyncHandler(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  await {{camelCase name}}ServiceInstance.delete(parseInt(id));
+  res.status(204).send();
+});

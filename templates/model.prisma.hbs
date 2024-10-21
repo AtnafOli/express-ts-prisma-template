@@ -1,0 +1,9 @@
+model {{pascalCase name}} {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  {{#each fields}}
+  {{name}} {{type}} 
+  {{/each}}
+}

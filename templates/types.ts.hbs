@@ -1,0 +1,11 @@
+export interface Create{{pascalCase name}} {
+  {{#each fields}}
+  {{name}}: {{typeMapping type}};
+  {{/each}}
+}
+
+export interface Update{{pascalCase name}} {
+  {{#each fields}}
+  {{name}}?: {{typeMapping type}};
+  {{/each}}
+}
