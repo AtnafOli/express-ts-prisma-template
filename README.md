@@ -31,6 +31,9 @@ A CRUD (Create, Read, Update, Delete) generator for APIs using Express.js, TypeS
    ```bash
    pnpm install
    ```
+   ```bash
+   pnpm exec prisma init
+   ```
 
 3. Configure your database in the `.env` file:
 
@@ -41,7 +44,6 @@ A CRUD (Create, Read, Update, Delete) generator for APIs using Express.js, TypeS
 4. Run migrations and generate the Prisma client:
 
    ```bash
-   pnpm exec prisma init
    pnpm prisma migrate dev
    pnpm prisma generate
    ```
