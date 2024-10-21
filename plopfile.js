@@ -59,7 +59,7 @@ module.exports = function (plop) {
       // Create controller for Create operation
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/controllers/{{pascalCase name}}CreateController.ts",
+        path: "src/modules/{{camelCase name}}/controllers/{{pascalCase name}}CreateController.ts",
         templateFile: "templates/controllerCreate.ts.hbs",
       },
       // Create controller for Update operation
@@ -77,35 +77,35 @@ module.exports = function (plop) {
       // Create controller for Get operation
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/controllers/{{pascalCase name}}GetController.ts",
+        path: "src/modules/{{camelCase name}}/controllers/{{pascalCase name}}GetController.ts",
         templateFile: "templates/controllerGet.ts.hbs",
       },
       // Create index.ts for controllers
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/controllers/index.ts",
+        path: "src/modules/{{camelCase name}}/controllers/index.ts",
         templateFile: "templates/controllersIndexTemplate.hbs",
       },
       // Create Routes file
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/routes/{{pascalCase name}}Routes.ts",
+        path: "src/modules/{{camelCase name}}/routes/{{pascalCase name}}Routes.ts",
         templateFile: "templates/routes.ts.hbs",
       },
       // Create Service file
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/services/{{pascalCase name}}Service.ts",
+        path: "src/modules/{{camelCase name}}/services/{{pascalCase name}}Service.ts",
         templateFile: "templates/service.ts.hbs",
       },
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/types/{{pascalCase name}}Types.ts",
+        path: "src/modules/{{camelCase name}}/types/{{pascalCase name}}Types.ts",
         templateFile: "templates/types.ts.hbs",
       },
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/index.ts",
+        path: "src/modules/{{camelCase name}}/index.ts",
         templateFile: "templates/index.ts.hbs",
       },
       // new model
