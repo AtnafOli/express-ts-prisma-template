@@ -65,13 +65,13 @@ module.exports = function (plop) {
       // Create controller for Update operation
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/controllers/{{pascalCase name}}UpdateController.ts",
+        path: "src/modules/{{camelCase name}}/controllers/{{pascalCase name}}UpdateController.ts",
         templateFile: "templates/controllerUpdate.ts.hbs",
       },
       // Create controller for Delete operation
       {
         type: "add",
-        path: "src/apps/{{camelCase name}}/controllers/{{pascalCase name}}DeleteController.ts",
+        path: "src/modules/{{camelCase name}}/controllers/{{pascalCase name}}DeleteController.ts",
         templateFile: "templates/controllerDelete.ts.hbs",
       },
       // Create controller for Get operation
